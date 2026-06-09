@@ -8,7 +8,7 @@ export default function LandingProductCard({ product }: { product: Product }) {
   const cover = product.images?.[0];
   const second = product.images?.[1];
   const eyebrow =
-    product.material?.split(/[\s,]+/)[0] || product.category?.name || "Assoda";
+    product.material?.split(/[\s,]+/)[0] || product.category?.name || "Asooda";
 
   return (
     <Link href={`/catalog/${product.slug}`} className="group block transition-transform duration-300 hover:-translate-y-1">

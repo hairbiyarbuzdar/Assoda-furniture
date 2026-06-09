@@ -8,7 +8,7 @@ cloudinary.config({
   secure: true,
 });
 
-export const UPLOAD_FOLDER = process.env.CLOUDINARY_UPLOAD_FOLDER || "assoda";
+export const UPLOAD_FOLDER = process.env.CLOUDINARY_UPLOAD_FOLDER || "asooda";
 
 /** True once Cloudinary credentials are present. */
 export function isCloudinaryConfigured(): boolean {

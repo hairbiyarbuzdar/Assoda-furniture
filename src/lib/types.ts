@@ -1,4 +1,4 @@
-// Shared domain types for the Assoda Furniture catalog.
+// Shared domain types for the Asooda Furniture catalog.
 
 export type ProductImage = {
   public_id: string; // Cloudinary public id (used for transformations / deletion)

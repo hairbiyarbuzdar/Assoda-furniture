@@ -13,7 +13,7 @@ export default function DashboardLayout({
         {/* Sidebar */}
         <aside className="hidden w-60 flex-none flex-col border-r border-zinc-200 bg-white p-5 md:flex">
           <Link href="/dashboard" className="text-lg font-semibold tracking-tight">
-            Assoda Admin
+            Asooda Admin
           </Link>
           <p className="mt-1 text-xs text-zinc-400">Control panel</p>
           <div className="mt-8 flex-1">
@@ -35,7 +35,7 @@ export default function DashboardLayout({
           {/* Mobile top bar */}
           <header className="flex items-center justify-between border-b border-zinc-200 bg-white px-5 py-3 md:hidden">
             <Link href="/dashboard" className="font-semibold">
-              Assoda Admin
+              Asooda Admin
             </Link>
             <LogoutButton />
           </header>

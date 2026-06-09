@@ -45,7 +45,7 @@ function LoginForm() {
         onSubmit={onSubmit}
         className="w-full max-w-sm rounded-lg border border-zinc-200 bg-white p-8"
       >
-        <h1 className="text-xl font-semibold">Assoda Admin</h1>
+        <h1 className="text-xl font-semibold">Asooda Admin</h1>
         <p className="mt-1 text-sm text-zinc-500">
           Enter the dashboard password.
         </p>

@@ -58,7 +58,7 @@ export default async function CatalogPage({
             Curation of Living
           </h1>
           <p className="mt-6 leading-relaxed text-ink/70">
-            At Assoda, we believe that the home is a living testament to time.
+            At Asooda, we believe that the home is a living testament to time.
             Our latest catalog emphasizes material integrity—sourced
             responsibly, crafted by hand, and designed to age with a grace that
             only natural wood, stone, and textile can provide.

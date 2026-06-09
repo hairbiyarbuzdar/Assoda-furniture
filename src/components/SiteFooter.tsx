@@ -29,7 +29,7 @@ export default function SiteFooter() {
           {/* Brand */}
           <div className="lg:pr-6">
             <Link href="/" className="font-serif text-2xl text-maroon">
-              Assoda
+              Asooda
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink/60">
               Crafting timeless environments with materials that speak of the
@@ -86,7 +86,7 @@ export default function SiteFooter() {
         {/* Bottom bar */}
         <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-maroon/10 pt-6 text-xs uppercase tracking-[0.15em] text-muted sm:flex-row">
           <p>
-            © {new Date().getFullYear()} Assoda Furniture. Crafted for Generations.
+            © {new Date().getFullYear()} Asooda Furniture. Crafted for Generations.
             <br />
             <span className="text-muted/60">Developed by Hairbiyar</span>
           </p>

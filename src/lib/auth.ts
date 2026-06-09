@@ -3,7 +3,7 @@ import { SignJWT, jwtVerify } from "jose";
 // Single-admin-password session. We don't store users; a correct password
 // mints a short-lived signed JWT stored in an httpOnly cookie.
 
-export const SESSION_COOKIE = "assoda_admin";
+export const SESSION_COOKIE = "asooda_admin";
 const MAX_AGE_SECONDS = 60 * 60 * 24 * 7; // 7 days
 
 function getSecret(): Uint8Array {

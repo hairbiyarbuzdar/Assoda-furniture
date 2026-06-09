@@ -10,9 +10,9 @@ import type { OurStoryContent } from "@/lib/types";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Our Story — Assoda",
+  title: "Our Story — Asooda",
   description:
-    "Established in 1924. Crafted for generations — the philosophy, journey, and sustainable practice behind Assoda furniture.",
+    "Established in 1924. Crafted for generations — the philosophy, journey, and sustainable practice behind Asooda furniture.",
 };
 
 export default async function OurStoryPage() {
