@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Asooda  — Furniture for a slow life",
+  title: "Asooda — Furniture for a slow life",
   description:
     "Slow-crafted furniture designed to endure for generations. Discover the warmth of natural materials and artisanal precision.",
 };
