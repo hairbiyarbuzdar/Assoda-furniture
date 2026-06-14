@@ -51,7 +51,7 @@ export default function Hero({ content }: { content: HomeContent["hero"] }) {
   return (
     <section
       ref={containerRef}
-      className="relative h-[78vh] min-h-[520px] w-full overflow-hidden"
+      className="relative h-screen min-h-[600px] w-full overflow-hidden"
     >
       {content.image?.url && (
         <Image
@@ -76,7 +76,7 @@ export default function Hero({ content }: { content: HomeContent["hero"] }) {
             </p>
           )}
           <h1
-            className="hero-title font-serif text-5xl leading-[1.05] text-maroon sm:text-6xl"
+            className="hero-title font-serif text-5xl leading-[1.05] text-maroon sm:text-6xl lg:text-7xl"
             style={{ opacity: 0 }}
           >
             {content.title}
@@ -94,6 +94,14 @@ export default function Hero({ content }: { content: HomeContent["hero"] }) {
           >
             {content.cta.label}
           </Link>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+        <span className="text-[0.6rem] uppercase tracking-[0.3em] text-ink/40">Scroll</span>
+        <div className="h-10 w-px overflow-hidden bg-ink/15">
+          <div className="h-full w-full animate-[scrollLine_1.6s_ease-in-out_infinite] bg-maroon" />
         </div>
       </div>
     </section>

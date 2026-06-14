@@ -1,8 +1,9 @@
 import SiteHeader from "@/components/SiteHeader";
 import Hero from "@/components/Hero";
-import CraftBand from "@/components/CraftBand";
+import MarqueeBand from "@/components/MarqueeBand";
 import FeaturedCollections from "@/components/FeaturedCollections";
 import NewArrivals from "@/components/NewArrivals";
+import CraftBand from "@/components/CraftBand";
 import Newsletter from "@/components/Newsletter";
 import SiteFooter from "@/components/SiteFooter";
 import ScrollReveal from "@/components/animations/ScrollReveal";
@@ -33,14 +34,15 @@ export default async function HomePage() {
       <SiteHeader />
       <main>
         <Hero content={home.hero} />
-        <ScrollReveal>
-          <CraftBand content={home.craftBand} />
-        </ScrollReveal>
+        <MarqueeBand />
         <ScrollReveal>
           <FeaturedCollections content={home.featuredCollections} />
         </ScrollReveal>
         <ScrollReveal>
           <NewArrivals products={arrivals} />
+        </ScrollReveal>
+        <ScrollReveal>
+          <CraftBand content={home.craftBand} />
         </ScrollReveal>
         <ScrollReveal>
           <Newsletter content={home.newsletter} />

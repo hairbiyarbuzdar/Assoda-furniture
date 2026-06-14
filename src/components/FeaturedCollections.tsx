@@ -26,31 +26,71 @@ export default function FeaturedCollections({
         </Link>
       </div>
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2">
-        {content.items.map((c) => (
+      <div className="mt-10 grid gap-4 md:grid-cols-[3fr_2fr] md:grid-rows-[1fr_1fr] md:gap-4" style={{ minHeight: "600px" }}>
+        {/* Large card — spans both rows on desktop */}
+        {content.items[0] && (
           <Link
-            key={c.title}
-            href={c.href}
-            className="group relative block aspect-[4/5] overflow-hidden sm:aspect-[3/4]"
+            href={content.items[0].href}
+            className="group relative block aspect-[3/4] overflow-hidden md:aspect-auto md:row-span-2"
           >
-            {c.image?.url && (
+            {content.items[0].image?.url && (
               <Image
-                src={c.image.url}
-                alt={c.title}
+                src={content.items[0].image.url}
+                alt={content.items[0].title}
                 fill
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="(max-width: 768px) 100vw, 60vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            )}
+            <div className="absolute inset-0 bg-gradient-to-t from-ink/65 via-ink/10 to-transparent" />
+            <div className="absolute bottom-0 left-0 p-8">
+              <p className="text-[0.6rem] uppercase tracking-[0.28em] text-cream/60">Collection</p>
+              <h3 className="mt-1 font-serif text-4xl text-cream">{content.items[0].title}</h3>
+              <span className="mt-3 inline-block text-xs uppercase tracking-[0.2em] text-cream/80 transition-opacity group-hover:opacity-100">
+                Shop Now →
+              </span>
+            </div>
+          </Link>
+        )}
+
+        {/* Small card */}
+        {content.items[1] && (
+          <Link
+            href={content.items[1].href}
+            className="group relative block aspect-[4/3] overflow-hidden md:aspect-auto"
+          >
+            {content.items[1].image?.url && (
+              <Image
+                src={content.items[1].image.url}
+                alt={content.items[1].title}
+                fill
+                sizes="(max-width: 768px) 100vw, 40vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
             )}
             <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent" />
-            <div className="absolute bottom-0 left-0 p-8">
-              <h3 className="font-serif text-3xl text-cream">{c.title}</h3>
-              <span className="mt-2 inline-block text-xs uppercase tracking-[0.2em] text-cream/90">
-                Shop Now
+            <div className="absolute bottom-0 left-0 p-6">
+              <h3 className="font-serif text-2xl text-cream">{content.items[1].title}</h3>
+              <span className="mt-2 inline-block text-xs uppercase tracking-[0.2em] text-cream/80">
+                Shop Now →
               </span>
             </div>
           </Link>
-        ))}
+        )}
+
+        {/* Editorial text card */}
+        <div className="flex flex-col justify-center bg-maroon p-8">
+          <p className="text-[0.6rem] uppercase tracking-[0.28em] text-cream/50">The Asooda Edit</p>
+          <p className="mt-3 font-serif text-2xl leading-snug text-cream">
+            Objects that outlive the moment they were made for.
+          </p>
+          <Link
+            href="/catalog"
+            className="mt-6 w-fit border border-cream/30 px-5 py-2.5 text-[0.65rem] uppercase tracking-[0.22em] text-cream/80 transition-colors hover:border-cream hover:text-cream"
+          >
+            View All Pieces
+          </Link>
+        </div>
       </div>
     </section>
   );
